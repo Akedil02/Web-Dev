@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Homepage</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+            margin: 0 auto;
+            padding: 0;
+            width: 80%;
+        }
+
+        header {
+            background: #f2f2f2;
+            padding: 10px 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .logo {
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav-icons {
+            position: absolute;
+            right: 300px;
+            transform: translateY(-5px);
+        }
+
+        .nav-icons a {
+            text-decoration: none;
+            color: black;
+            margin: 20px;
+            margin-bottom: 10px;
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 50vh;
+            overflow: hidden;
+
+        }
+
+        .hero-img {
+
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-content {
+            position: absolute;
+            left: 5%;
+            top: 30%;
+            transform: translateY(-50%);
+            color: black;
+            background-color: white;
+            padding-left: 40px;
+            text-align: left;
+            width: 650px;
+            height: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+        }
+
+        .product-links {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            padding: 20px;
+        }
+
+        .product-links a {
+            text-decoration: underline;
+            color: #314871;
+            font-weight: bold;
+        }
+
+        .products {
+            position:absolute;
+            left: 8%;
+            width: 80%;
+            display: grid;
+            grid-template-columns:repeat(4, 250px);
+            justify-content: center;
+            gap: 100px;
+            padding: 20px;
+        }
+
+        .product {
+            width: 330px;
+            height: 400px;
+            background: #fff;
+            padding: 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .product img {
+            width: 100%;
+            height: 40%;
+
+        }
+
+        .product-detail{
+            width: 90%;
+            height: 60%;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        button {
+            background: #2b65b2;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: rgb(162, 162, 165);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="C:\Users\nuers\code\web-dev\lab2\images for microsoft\Microsoft_Logo_512px.png"
+                alt="microsofr_logo" style="width: 25px; height: 25px;">
+            <div class="logo">Microsoft</div>
+            <ul class="nav-links">
+                <li><a href="#" style="margin-left: 20px;">Microsoft 365</a></li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="#">Copilot</a></li>
+                <li><a href="#">Windows</a></li>
+                <li><a href="#">Surface</a></li>
+                <li><a href="#">Xbox</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Small Bussiness</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#">All Microsoft</a>
+                <a href="#">Search</a>
+                <a href="#">Cart</a>
+                <a href="#">Sign in</a>
+                <img src="C:\Users\nuers\code\web-dev\lab2\images for microsoft\profileImage.png" alt="profile"
+                    style="width:30px;height:30px;transform: translate(-15px, 8px);">
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img class="hero-img" src="C:\Users\nuers\code\web-dev\lab2\images for microsoft\copilot.jpg" alt="Copilot">
+        <div class="hero-content">
+            <h1 style="font-size: 200%; transform: translateY(0px);">Meet Surface Pro</h1>
+            <p style="transform: translateY(-20px);">This laptop's unrivalled flexibility and AI features like Live
+                Captions and<br> Cocreator enable you to do more than you ever imagined.</p>
+            <button style="transform: translateY(-10px);">Shop now</button>
+        </div>
+    </section>
+
+    <section class="product-links">
+        <a href="#">Shop Surface devices</a>
+        <a href="#">Shop Xbox games and consoles</a>
+        <a href="#">Shop for accessories</a>
+        <a href="#">Shop for your business</a>
+        <a href="#">Find your next PC</a>
+        <a href="#">Choose your Microsoft 365</a>
+    </section>
+
+    <section class="products">
+        <div class="product">
+            <img src="C:\Users\nuers\code\web-dev\lab2\images for microsoft\laptop.png" alt="Surface Laptop">
+            <div class="product-detail">
+                <h2>Surface Laptop, Copilot+ PC</h2>
+                <p>Unlock AI features with this powerful laptop.</p>
+                <button>Shop now</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="C:\Users\nuers\code\web-dev\lab2\images for microsoft\xbo.png" alt="Xbox Series S">
+            <div class="product-detail">
+                <h2>Xbox Series S</h2>
+                <p>Next-gen performance in the smallest Xbox ever.</p>
+                <button>Shop Xbox Series S</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="C:\Users\nuers\code\web-dev\lab2\images for microsoft\controllers.png" alt="Xbox Controllers">
+            <div class="product-detail">
+                <h2>Xbox Controllers</h2>
+                <p>Elite, wireless, adaptive—find the controller that fits your style.</p>
+                <button>Shop now</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="C:\Users\nuers\code\web-dev\lab2\images for microsoft\direct.png" alt="Developer Direct">
+            <div class="product-detail">
+                <h2>Xbox presents Developer_Direct</h2>
+                <p>Tune in January 23 to hear directly from the developers.</p>
+                <button>Learn more</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
