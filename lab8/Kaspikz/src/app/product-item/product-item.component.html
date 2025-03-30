@@ -1,0 +1,14 @@
+<div class="product-card">
+    <img [src]="'https://via.placeholder.com/150'" alt="{{ product.name }}" class="product-image">
+    <hr>
+    <div class="product-card-info">
+        <div class="product-card-name">
+            <h3>{{ product.name }}</h3>
+        </div>
+        <p class="price">{{ product.price }} $</p>
+        <p class="description">{{ product.description }}</p>
+        <p class="stock">Stock: {{ product.count }}</p>
+
+        <button class="like-btn" (click)="likeProduct()">❤️ Like</button>
+    </div>
+</div>

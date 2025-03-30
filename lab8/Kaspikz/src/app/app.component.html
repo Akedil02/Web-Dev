@@ -1,0 +1,18 @@
+<div class="app-container">
+    <div class="app-title">
+        <img src="https://ks-static.cdn-kaspi.kz/shop/front/nuxt/stable/ks-logo.hBtcDcc1.svg">
+    </div>
+
+    <ul class="app-list">
+        <li *ngFor="let category of categories"
+         (click)="selectCategory(category.id)">
+            {{ category.name }}
+        </li>
+    </ul>
+
+    <app-product-list
+    [categoryId]="selectedCategoryId ?? 0">
+</app-product-list>
+
+
+</div>
